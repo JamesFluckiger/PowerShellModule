@@ -26,4 +26,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         enable-AzPSSession: true    
       
-    -run: echo Hello World
+    - name: Checkout source code
+      uses: actions/checkout@v2
+
+    
