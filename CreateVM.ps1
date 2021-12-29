@@ -1,3 +1,7 @@
+$pscredential = New-Object -TypeName System.Management.Automation.PSCredential($sp.ApplicationId, $sp.Secret)
+Connect-AzAccount -ServicePrincipal -Credential $pscredential -Tenant $tenantId
+
+
 $Info = @{
     RGName = "rg-jflukepowershellmodule-temp-westus2"
     Location = "westus2"
