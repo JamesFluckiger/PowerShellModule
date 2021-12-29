@@ -25,4 +25,5 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
         enable-AzPSSession: true    
-        run: echo Hello World
+      
+    -run: echo Hello World
